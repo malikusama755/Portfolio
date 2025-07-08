@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const projects = [
   {
     title: "Spotify Clone",
@@ -21,29 +23,37 @@ const projects = [
     title: "Password Manager",
     tech: "React, Express.js, MongoDB",
     description: "A full-stack password manager with backend integration and clean UI.",
-    source: "#",
+    source: "https://password-manager-frontend-ochre.vercel.app",
   },
 ];
 
 const Projects = () => {
   return (
     <section className="p-6 max-w-5xl mx-auto">
-      <h2 className="text-3xl font-bold mb-6 text-green-400">Projects</h2>
-      <div className="grid gap-6 md:grid-cols-2">
+      <h2 className="text-3xl font-bold mb-8 text-green-400">Projects</h2>
+      <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2">
         {projects.map((project, i) => (
-          <div key={i} className="p-4 border border-gray-700 rounded-xl bg-[#161b22]">
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.03 }}
+            transition={{ duration: 0.5, type: "spring", stiffness: 300 }}
+            viewport={{ once: true }}
+            className="p-6 border border-gray-700 rounded-2xl bg-[#161b22] shadow-lg"
+          >
             <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-            <p className="text-gray-400 text-sm mb-2">{project.tech}</p>
+            <p className="text-green-400 text-sm mb-2">{project.tech}</p>
             <p className="text-gray-300 mb-4">{project.description}</p>
             <a
               href={project.source}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-green-400 hover:underline"
+              className="inline-block text-green-400 font-semibold hover:underline"
             >
               View Source
             </a>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
