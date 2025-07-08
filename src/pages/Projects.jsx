@@ -17,7 +17,7 @@ const projects = [
     title: "React Todo App",
     tech: "React, Tailwind CSS",
     description: "CRUD Todo App with localStorage persistence and responsive layout.",
-    source: "https://todo-app-react-qj93aputk-malik-usamas-projects-125d20f3.vercel.app#",
+    source: "https://todo-app-react-sigma-one.vercel.app/",
   },
   {
     title: "Password Manager",
@@ -51,7 +51,7 @@ const Projects = () => {
               rel="noopener noreferrer"
               className="inline-block text-green-400 font-semibold hover:underline"
             >
-              View Source
+              Visit
             </a>
           </motion.div>
         ))}
