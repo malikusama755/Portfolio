@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
+     <section className="pt-24 min-h-[80vh] flex flex-col md:flex-row items-center justify-center px-6 md:px-12 text-center md:text-left gap-8 bg-[#0d1117]">
     <motion.section
       className="p-6 max-w-xl mx-auto text-gray-300"
       initial={{ opacity: 0, y: 20 }}
@@ -44,6 +45,7 @@ const Contact = () => {
         </a>
       </p>
     </motion.section>
+    </section>
   );
 };
 

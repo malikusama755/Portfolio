@@ -24,7 +24,7 @@ const Home = () => {
         className="flex-1 max-w-xs w-full rounded-3xl overflow-hidden shadow-lg border-4 border-green-400"
       >
         <img
-          src="/public/malikusama.jpeg"
+          src="/malikusama.jpeg"
           alt="Usama Farooq"
           className="w-full h-auto object-cover"
         />
