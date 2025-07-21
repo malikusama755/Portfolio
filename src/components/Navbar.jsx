@@ -21,7 +21,7 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
       className="bg-[#0d1117] border-b border-gray-700 fixed top-0 w-full z-50"
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-10 px-2 py-4 flex items-center justify-between">
         <Logo />
 
         {/* Desktop Menu */}
