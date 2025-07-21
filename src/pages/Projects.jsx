@@ -15,7 +15,7 @@ const projects = [
   },
   {
     title: "React Todo App",
-    tech: "React, Tailwind CSS",
+    tech: "React, Tailwind CSS, localStorage",
     description: "CRUD Todo App with localStorage persistence and responsive layout.",
     source: "https://todo-app-react-sigma-one.vercel.app/",
   },
